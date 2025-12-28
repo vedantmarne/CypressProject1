@@ -1,0 +1,25 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "echo I am PreTest",
+    "posttest": "echo I am PostTest",
+    "test": "echo I am Test",
+    "hello": "echo hello world",
+    "cy-test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^15.7.1",
+    "cypress-downloadfile": "^1.2.4"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1"
+  }
+}

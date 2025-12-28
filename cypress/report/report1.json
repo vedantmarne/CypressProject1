@@ -1,0 +1,453 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2025-12-28T16:48:00.648Z",
+    "end": "2025-12-28T16:48:44.814Z",
+    "duration": 44166
+  },
+  "results": [
+    {
+      "uuid": "939dfc89-f5b0-415f-8814-9a2131f06691",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fileuploaddownloaddemo.cy.js",
+      "file": "cypress\\e2e\\fileuploaddownloaddemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a871eae2-ffab-4a66-8857-ecac73dcee56",
+          "title": "File Upload Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "File Upload Test",
+              "fullTitle": "File Upload Test File Upload Test",
+              "timedOut": null,
+              "duration": 526,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://trytestingthis.netlify.app/');\ncy.get('[name=\"myfile\"]').click().attachFile('example.json');",
+              "err": {},
+              "uuid": "1445280b-136e-45ef-814e-a3c39671a363",
+              "parentUUID": "a871eae2-ffab-4a66-8857-ecac73dcee56",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1445280b-136e-45ef-814e-a3c39671a363"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 526,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e39098c9-37c3-4b7a-973f-20c3744c1300",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pomdemo.cy.js",
+      "file": "cypress\\e2e\\pomdemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4adea7a3-de06-4c5f-97c9-acc697e72a2b",
+          "title": "All Login Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "All Login Tests Login with valid credentials",
+              "timedOut": null,
+              "duration": 5327,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('#app h6.oxd-text').click().should('contain', 'Dashboard').should('be.visible');",
+              "err": {},
+              "uuid": "eb30cfe7-b53d-4b9b-acda-c6ca24f6a9fc",
+              "parentUUID": "4adea7a3-de06-4c5f-97c9-acc697e72a2b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid username",
+              "fullTitle": "All Login Tests Login with invalid username",
+              "timedOut": null,
+              "duration": 3458,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin1');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();\ncy.get('#app p.oxd-alert-content-text').click().should('contain', 'Invalid credentials').should('be.visible');",
+              "err": {},
+              "uuid": "3e2dd447-6183-4ac6-b78b-4da0416dc543",
+              "parentUUID": "4adea7a3-de06-4c5f-97c9-acc697e72a2b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid password",
+              "fullTitle": "All Login Tests Login with invalid password",
+              "timedOut": null,
+              "duration": 3050,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin1234');\nloginPage.clickLogin();\ncy.get('#app p.oxd-alert-content-text').click().should('contain', 'Invalid credentials').should('be.visible');",
+              "err": {},
+              "uuid": "eedf1c06-a761-4934-8a43-a83fed3d77f5",
+              "parentUUID": "4adea7a3-de06-4c5f-97c9-acc697e72a2b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb30cfe7-b53d-4b9b-acda-c6ca24f6a9fc",
+            "3e2dd447-6183-4ac6-b78b-4da0416dc543",
+            "eedf1c06-a761-4934-8a43-a83fed3d77f5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11835,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7a7e1e0f-99ea-4d3e-81d3-f0b4570853a4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\readwritefilesdemo.cy.js",
+      "file": "cypress\\e2e\\readwritefilesdemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Read file using fixture",
+          "fullTitle": "Read file using fixture",
+          "timedOut": null,
+          "duration": 56,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.fixture('example.json').then(data => {\n  cy.log(data.name);\n  cy.log(data.email);\n});\ncy.log(this.test_data.name);",
+          "err": {},
+          "uuid": "cd44b811-12f6-4ae4-8c5c-02626cc15c2c",
+          "parentUUID": "7a7e1e0f-99ea-4d3e-81d3-f0b4570853a4",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Read file using readFile()",
+          "fullTitle": "Read file using readFile()",
+          "timedOut": null,
+          "duration": 46,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.readFile('./cypress/fixtures/example.json').then(data => {\n  cy.log(data.name);\n  cy.log(data.email);\n});",
+          "err": {},
+          "uuid": "b2815365-f7b5-438c-a845-3ed50bf73829",
+          "parentUUID": "7a7e1e0f-99ea-4d3e-81d3-f0b4570853a4",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Write file demo()",
+          "fullTitle": "Write file demo()",
+          "timedOut": null,
+          "duration": 39,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.writeFile('./cypress/fixtures/sample.txt', 'Hello I am Vedant\\n');\ncy.writeFile('./cypress/fixtures/sample.txt', 'I am learning cypress', {\n  flag: 'a+'\n});",
+          "err": {},
+          "uuid": "2158af5f-4cde-4126-af04-bfe781335904",
+          "parentUUID": "7a7e1e0f-99ea-4d3e-81d3-f0b4570853a4",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "cd44b811-12f6-4ae4-8c5c-02626cc15c2c",
+        "b2815365-f7b5-438c-a845-3ed50bf73829",
+        "2158af5f-4cde-4126-af04-bfe781335904"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 141,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "dbdf8cd9-81c0-4a31-a2ef-28bbf18108f5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f5e763a5-2c00-4eaa-bece-61e9122ea0bb",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 979,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "d4dcbce0-45ba-4f06-b783-9976be206238",
+              "parentUUID": "f5e763a5-2c00-4eaa-bece-61e9122ea0bb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d4dcbce0-45ba-4f06-b783-9976be206238"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 979,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a631a162-facf-4e5d-81eb-4d787976c896",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test1.cy.js",
+      "file": "cypress\\e2e\\test1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90cbc594-1877-4f9f-8e4a-379b86ca8b72",
+          "title": "Google Search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Google Search",
+              "fullTitle": "Google Search Google Search",
+              "timedOut": null,
+              "duration": 6145,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');\ncy.get('#app [name=\"username\"]').type('Admin');\ncy.get('#app [name=\"password\"]').type('admin123{enter}');",
+              "err": {},
+              "uuid": "a6ff37f0-579f-4aca-99eb-9092a5e17c60",
+              "parentUUID": "90cbc594-1877-4f9f-8e4a-379b86ca8b72",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6ff37f0-579f-4aca-99eb-9092a5e17c60"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6145,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "740881d2-d8f0-4446-ac23-46deb5bd370c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertiondemo.cy.js",
+      "file": "cypress\\e2e\\assertiondemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f0cf274c-6d56-4f0a-8c0b-e6de92c7bd5a",
+          "title": "assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "assertion",
+              "fullTitle": "assertion assertion",
+              "timedOut": null,
+              "duration": 3127,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');\ncy.get('#app button.oxd-button').should('contain', 'Login').should('be.visible');",
+              "err": {},
+              "uuid": "8bc774ec-8cf9-4daa-a916-9d459f6d5867",
+              "parentUUID": "f0cf274c-6d56-4f0a-8c0b-e6de92c7bd5a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8bc774ec-8cf9-4daa-a916-9d459f6d5867"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3127,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
